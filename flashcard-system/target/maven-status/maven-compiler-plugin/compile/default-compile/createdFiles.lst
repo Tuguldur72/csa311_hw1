@@ -1,0 +1,8 @@
+mn\edu\num\csa311\FlashcardGame.class
+mn\edu\num\csa311\Card.class
+mn\edu\num\csa311\AchievementManager.class
+mn\edu\num\csa311\organizer\RecentMistakesFirstSorter.class
+mn\edu\num\csa311\CardLoader.class
+mn\edu\num\csa311\Main.class
+mn\edu\num\csa311\CLIParser.class
+mn\edu\num\csa311\organizer\CardOrganizer.class
