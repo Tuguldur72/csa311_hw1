@@ -1,19 +1,21 @@
 package mn.edu.num.csa311;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+import mn.edu.num.csa311.organizer.RecentMistakesFirstSorter;
+import java.util.Arrays;
+import java.util.List;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest {
-
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
+    public void testRecentMistakesFirst() {
+        Card c1 = new Card("Q1", "A1"); // Зөв
+        Card c2 = new Card("Q2", "A2"); // Буруу
+        c2.recordAttempt(false);
+        
+        List<Card> cards = Arrays.asList(c1, c2);
+        new RecentMistakesFirstSorter().organize(cards);
+        
+        assertEquals("Q2", cards.get(0).getQuestion());
     }
 }
