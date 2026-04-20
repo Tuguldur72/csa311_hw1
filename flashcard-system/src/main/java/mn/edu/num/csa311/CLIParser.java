@@ -25,12 +25,12 @@ public class CLIParser {
     }
 
     public void printHelp() {
-    System.out.println("Flashcard System");
-    System.out.println("Usage: java -cp target/classes mn.edu.num.csa311.Main <cards-file> [options]");
-    System.out.println("Options:");
-    System.out.println("  --help                Show help information");
-    System.out.println("  --order <order>       Set card order [random, worst-first, recent-mistakes-first]");
-    System.out.println("  --repetitions <num>   Set how many times a card must be answered correctly");
-    System.out.println("  --invertCards         Swap questions and answers");
-}
+        System.out.println("Flashcard System");
+        System.out.println("Usage: java -cp target/classes mn.edu.num.csa311.Main <cards-file> [options]");
+        System.out.println("Options:");
+        System.out.println("  --help                Show help information");
+        System.out.println("  --order <order>       Set card order [random, worst-first, recent-mistakes-first]");
+        System.out.println("  --repetitions <num>   Set how many times a card must be answered correctly");
+        System.out.println("  --invertCards         Swap questions and answers");
+    }
 }
