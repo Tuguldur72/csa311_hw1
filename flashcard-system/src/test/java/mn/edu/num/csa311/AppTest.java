@@ -1,12 +1,15 @@
 package mn.edu.num.csa311;
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
-import mn.edu.num.csa311.organizer.RecentMistakesFirstSorter;
-import mn.edu.num.csa311.organizer.WorstFirstSorter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import mn.edu.num.csa311.organizer.RecentMistakesFirstSorter;
+import mn.edu.num.csa311.organizer.WorstFirstSorter;
 
 public class AppTest {
 
