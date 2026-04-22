@@ -1,12 +1,12 @@
 package mn.edu.num.csa311;
 
-import mn.edu.num.csa311.organizer.CardOrganizer;
-import mn.edu.num.csa311.organizer.RecentMistakesFirstSorter;
-import mn.edu.num.csa311.organizer.WorstFirstSorter;
-
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+
+import mn.edu.num.csa311.organizer.CardOrganizer;
+import mn.edu.num.csa311.organizer.RecentMistakesFirstSorter;
+import mn.edu.num.csa311.organizer.WorstFirstSorter;
 
 public class FlashcardGame {
     private List<Card> cards;
@@ -24,7 +24,6 @@ public class FlashcardGame {
                 c.invert();
         }
 
-        // FlashcardGame.java-ийн constructor дотор:
         if ("recent-mistakes-first".equals(config.order)) {
             this.organizer = new RecentMistakesFirstSorter();
         } else if ("worst-first".equals(config.order)) {
